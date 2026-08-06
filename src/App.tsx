@@ -2,20 +2,31 @@ import { data } from "./data/data";
 
 import { FaHeart } from "react-icons/fa";
 
+import whatsappWhite from "./assets/icons/whatsappWhite.svg";
+import whatsappBlack from "./assets/icons/whatsappBlack.svg";
+import instagramBlack from "./assets/icons/instagramBlack.svg";
+import modelo1 from "./assets/images/modelo1.png";
+import modelo2 from "./assets/images/modelo2.png";
+
+import whatsappPrimaryColor from "./assets/icons/whatsappPrimaryColor.svg";
+import instagramPrimaryColor from "./assets/icons/instagramPrimaryColor.svg";
+import businessHoursPrimaryColor from "./assets/icons/businessHoursPrimaryColor.svg";
+import mapsPrimaryColor from "./assets/icons/mapsPrimaryColor.svg";
+
 function App() {
 
   return (
     <>
       <div>
-        <img src="" alt="Logo" />
+        <img src={data.markBlack} alt="Logo" />
         <nav>
           <a>Início</a>
           <a>Sobre</a>
           <a>Tratamentos</a>
           <a>Contato</a>
         </nav>
-        <a>
-          <img src="" alt="Ícone do Instagram" />
+        <a href={data.whatsAppLink} target="_blank" rel="noopener noreferrer">
+          <img src={whatsappWhite} alt="Ícone do WhatsApp" />
         </a>
       </div>
       <article>
@@ -28,14 +39,14 @@ function App() {
 
         <div>
           <a>
-            <img src="" alt="Ícone do WhatsApp" />
+            <img src={whatsappBlack} alt="Ícone do WhatsApp" />
           </a>
           <a>
-            <img src="" alt="Ícone do Instagram" />
+            <img src={instagramBlack} alt="Ícone do Instagram" />
           </a>
         </div>
 
-        <img src="" alt="Modelo" />
+        <img src={modelo1} alt="Modelo" />
       </article>
 
       <article>
@@ -77,7 +88,7 @@ function App() {
             <textarea placeholder="Mensagem"></textarea>
             <button type="submit">Enviar</button>
           </form>
-          <img src="" alt="Modelo" />
+          <img src={modelo2} alt="Modelo" />
         </section>
 
         <section>
@@ -88,28 +99,28 @@ function App() {
             <p>Agende sua avaliação ou tire suas dúvidas. Nossa equipe está pronta para te atender com atenção e exclusividade.</p>
             <div>
               <a href={data.whatsAppLink} target="_blank" rel="noopener noreferrer">
-                <img src="" alt="Ícone do WhatsApp" />
+                <img src={whatsappPrimaryColor} alt="Ícone do WhatsApp" />
                 <div>
                   <h5>Telefone / WhatsApp</h5>
                   <h4>{data.number}</h4>
                 </div>
               </a>
               <a href={data.instagramLink} target="_blank" rel="noopener noreferrer">
-                <img src="" alt="Ícone do Instagram" />
+                <img src={instagramPrimaryColor} alt="Ícone do Instagram" />
                 <div>
                   <h5>Instagram</h5>
                   <h4>@{data.instagram}</h4>
                 </div>
               </a>
               <div>
-                <img src="" alt="Ícone de Horário" />
+                <img src={businessHoursPrimaryColor} alt="Ícone de Horário" />
                 <div>
                   <h5>Horário de Funcionamento</h5>
                   <h4>{data.businessHours}</h4>
                 </div>
               </div>
               <div>
-                <img src="" alt="Ícone de Localização" />
+                <img src={mapsPrimaryColor} alt="Ícone de Localização" />
                 <div>
                   <h5>Endereço</h5>
                   <h4>{data.location}</h4>
@@ -143,7 +154,7 @@ function App() {
           </div>
         </div>
         <div>
-          <img src="" alt="Logo" />
+          <img src={data.markWhite} alt="Logo" />
           <span>© 2026 {data.name}.<br /> Feito com <FaHeart /></span>
         </div>
 

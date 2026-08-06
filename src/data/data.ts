@@ -1,3 +1,6 @@
+import markBlack from "../../public/markBlack.svg";
+import markWhite from "../../public/markWhite.svg";
+
 export const data = {
     name: "Gerci Oliveira",
     city: "Moreno",
@@ -11,8 +14,6 @@ export const data = {
 
     textAboutUs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-
-
     differential1Title: "+ 8 mil",
     differential1Description: "procedimentos realizados",
     differential2Title: "+9",
@@ -21,6 +22,9 @@ export const data = {
     differential3Description: "Avaliação no google",
     differential4Title: "96%",
     differential4Description: "Satisfação dos clientes",
+
+    markBlack: markBlack,
+    markWhite: markWhite,
 
     services: [
         {
