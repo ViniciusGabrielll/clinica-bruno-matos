@@ -1,5 +1,7 @@
 import { data } from "./data/data";
 
+import styles from "./App.module.css";
+
 import { FaHeart } from "react-icons/fa";
 
 import whatsappWhite from "./assets/icons/whatsappWhite.svg";
@@ -12,44 +14,70 @@ import whatsappPrimaryColor from "./assets/icons/whatsappPrimaryColor.svg";
 import instagramPrimaryColor from "./assets/icons/instagramPrimaryColor.svg";
 import businessHoursPrimaryColor from "./assets/icons/businessHoursPrimaryColor.svg";
 import mapsPrimaryColor from "./assets/icons/mapsPrimaryColor.svg";
+import { useScrollSpy } from "./hooks/useScrollSpy";
+
+type NavItem = {
+  id: string;
+  label: string;
+};
+
+const navItems: NavItem[] = [
+  { id: "inicio", label: "Início" },
+  { id: "sobre", label: "Sobre" },
+  { id: "tratamentos", label: "Tratamentos" },
+  { id: "contato", label: "Contato" },
+];
 
 function App() {
 
+  const activeId = useScrollSpy(navItems.map((item) => item.id));
+
   return (
     <>
-      <div>
-        <img src={data.markBlack} alt="Logo" />
-        <nav>
-          <a>Início</a>
-          <a>Sobre</a>
-          <a>Tratamentos</a>
-          <a>Contato</a>
+      <div className={styles.header}>
+        <img className={styles.markHeader} src={data.markBlack} alt="Logo" />
+        <nav className={styles.nav}>
+          <ul>
+            {navItems.map((item) => (
+              <li
+                key={item.id}
+                className={activeId === item.id ? styles.active : ""}
+              >
+                <a href={`#${item.id}`}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
         </nav>
-        <a href={data.whatsAppLink} target="_blank" rel="noopener noreferrer">
+        <a className={styles.whatsAppHeader} href={data.whatsAppLink} target="_blank" rel="noopener noreferrer">
           <img src={whatsappWhite} alt="Ícone do WhatsApp" />
         </a>
       </div>
-      <article>
-        <h1>{data.name}</h1>
-        <h2>A maior clínica de estética em {data.city}</h2>
+
+      <article className={styles.hero} id="inicio">
         <div>
-          <button>Ir para o WhatsApp</button>
-          <button>Ver Tratamentos</button>
+          <h1>{data.name}</h1>
+          <h2>A maior clínica de estética em {data.city}</h2>
+        </div>
+        <div className={styles.heroBtns}>
+          <a href={data.whatsAppLink} target="_blank" rel="noopener noreferrer" className={styles.darkBtn}>
+            Ir para o WhatsApp
+          </a>
+          <button className={styles.lightBtn}>Ver Tratamentos</button>
         </div>
 
-        <div>
-          <a>
+        <div className={styles.heroLinks}>
+          <a href={data.whatsAppLink} target="_blank" rel="noopener noreferrer">
             <img src={whatsappBlack} alt="Ícone do WhatsApp" />
           </a>
-          <a>
+          <a href={data.instagramLink} target="_blank" rel="noopener noreferrer">
             <img src={instagramBlack} alt="Ícone do Instagram" />
           </a>
         </div>
 
-        <img src={modelo1} alt="Modelo" />
+        <img src={modelo1} alt="Modelo" className={styles.model} />
       </article>
 
-      <article>
+      <article id="sobre">
         <h3>SOBRE NÓS</h3>
         <h2>Titulo Sobre nós</h2>
         <p>{data.textAboutUs}</p>
@@ -62,10 +90,10 @@ function App() {
         </div>
       </article>
 
-      <article>
+      <article id="tratamentos">
         <h2>Tratamentos</h2>
         {data.services.map((service) => (
-          <div>
+          <div key={service.title}>
             <img src={service.image} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
@@ -74,7 +102,7 @@ function App() {
         <button>Ver Todos</button>
       </article>
 
-      <article>
+      <article id="contato">
         <section>
           <form>
             <h3>ENVIE UMA MENSAGEM</h3>
@@ -92,9 +120,9 @@ function App() {
         </section>
 
         <section>
-          <iframe src={data.mapsLink}></iframe>
+          <iframe src={data.mapsLink} title="Localização da clínica no mapa" loading="lazy"></iframe>
           <div>
-            <h3>ENVIE UMA MENSAGEM</h3>
+            <h3>FALE CONOSCO</h3>
             <h2>Saiba mais sobre nós</h2>
             <p>Agende sua avaliação ou tire suas dúvidas. Nossa equipe está pronta para te atender com atenção e exclusividade.</p>
             <div>

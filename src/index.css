@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #DBC1A8;
+    --primary-text-color: #050200;
+    --white-color: #FFFBF7;
+    --grey-color: #585858;
+
+    --default-padding: 100px;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+article {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+}
