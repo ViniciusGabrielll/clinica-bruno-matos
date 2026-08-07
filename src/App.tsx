@@ -77,20 +77,44 @@ function App() {
         <img src={modelo1} alt="Modelo" className={styles.model} />
       </article>
 
-      <article id="sobre">
-        <h3>SOBRE NÓS</h3>
-        <h2>Titulo Sobre nós</h2>
-        <p>{data.textAboutUs}</p>
-        <button>Ver Tratamentos</button>
-        <div>
+      <div className={styles.sectionSeparator} />
+
+      <article className={styles.aboutUs} id="sobre">
+        <img src={data.aboutUsImg} alt="Foto da clínica de estética" />
+        <div className={styles.aboutUsContent}>
           <div>
+            <h3 className={styles.articleLabel}>SOBRE NÓS</h3>
+            <h2>Titulo Sobre nós</h2>
+          </div>
+          <p>{data.textAboutUs}</p>
+          <div>
+            <button className={styles.lightBtn}>Ver Tratamentos</button>
+          </div>
+        </div>
+        <div className={styles.differentials}>
+          <div className={styles.differential}>
             <h4>{data.differential1Title}</h4>
             <p>{data.differential1Description}</p>
+          </div>
+          <div className={styles.differentialDivisor} />
+          <div className={styles.differential}>
+            <h4>{data.differential2Title}</h4>
+            <p>{data.differential2Description}</p>
+          </div>
+          <div className={styles.differentialDivisor} />
+          <div className={styles.differential}>
+            <h4>{data.differential3Title}</h4>
+            <p>{data.differential3Description}</p>
+          </div>
+          <div className={styles.differentialDivisor} />
+          <div className={styles.differential}>
+            <h4>{data.differential4Title}</h4>
+            <p>{data.differential4Description}</p>
           </div>
         </div>
       </article>
 
-      <article id="tratamentos">
+      <article className={styles.services} id="tratamentos">
         <h2>Tratamentos</h2>
         {data.services.map((service) => (
           <div key={service.title}>
