@@ -2,6 +2,8 @@ import markBlack from "../../public/markBlack.svg";
 import markWhite from "../../public/markWhite.svg";
 import aboutUsImg from "../assets/images/aboutUs.png";
 
+import designDeSombrancelhas from "../assets/images/services/designDeSombrancelhas.svg";
+
 export const data = {
     name: "Gerci Oliveira",
     city: "Moreno",
@@ -15,7 +17,7 @@ export const data = {
 
     aboutUsImg: aboutUsImg,
     textAboutUs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    
+
     differential1Title: "+ 8 mil",
     differential1Description: "procedimentos realizados",
     differential2Title: "+9",
@@ -30,27 +32,83 @@ export const data = {
 
     services: [
         {
-            image: "",
+            image: designDeSombrancelhas,
             title: "Design de Sombrancelhas",
             description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
         },
         {
-            image: "",
+            image: designDeSombrancelhas,
             title: "Design de Sombrancelhas",
             description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
         },
         {
-            image: "",
+            image: designDeSombrancelhas,
             title: "Design de Sombrancelhas",
             description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
         },
         {
-            image: "",
+            image: designDeSombrancelhas,
             title: "Design de Sombrancelhas",
             description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
         },
         {
-            image: "",
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
+            title: "Design de Sombrancelhas",
+            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+        },
+        {
+            image: designDeSombrancelhas,
             title: "Design de Sombrancelhas",
             description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
         },

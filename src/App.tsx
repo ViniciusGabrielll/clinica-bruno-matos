@@ -1,8 +1,10 @@
 import { data } from "./data/data";
+import { useState } from "react";
 
 import styles from "./App.module.css";
 
 import { FaHeart } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 
 import whatsappWhite from "./assets/icons/whatsappWhite.svg";
 import whatsappBlack from "./assets/icons/whatsappBlack.svg";
@@ -31,6 +33,9 @@ const navItems: NavItem[] = [
 function App() {
 
   const activeId = useScrollSpy(navItems.map((item) => item.id));
+
+  const [showAll, setShowAll] = useState(false);
+  const visibleServices = showAll ? data.services : data.services.slice(0, 8);
 
   return (
     <>
@@ -62,7 +67,7 @@ function App() {
           <a href={data.whatsAppLink} target="_blank" rel="noopener noreferrer" className={styles.darkBtn}>
             Ir para o WhatsApp
           </a>
-          <button className={styles.lightBtn}>Ver Tratamentos</button>
+          <a href="#tratamentos" className={styles.lightBtn}>Ver Tratamentos</a>
         </div>
 
         <div className={styles.heroLinks}>
@@ -88,7 +93,7 @@ function App() {
           </div>
           <p>{data.textAboutUs}</p>
           <div>
-            <button className={styles.lightBtn}>Ver Tratamentos</button>
+            <a href="#contato" className={styles.lightBtn}>Fale conosco</a>
           </div>
         </div>
         <div className={styles.differentials}>
@@ -116,14 +121,34 @@ function App() {
 
       <article className={styles.services} id="tratamentos">
         <h2>Tratamentos</h2>
-        {data.services.map((service) => (
-          <div key={service.title}>
-            <img src={service.image} alt={service.title} />
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </div>
-        ))}
-        <button>Ver Todos</button>
+        <div className={styles.serviceList}>
+          {visibleServices.map((service) => (
+            <div className={styles.serviceCard} key={service.title}>
+              <img src={service.image} alt={service.title} />
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          ))}
+          {data.services.length > 8 && !showAll && (
+            <div className={styles.servicesGradient} />
+          )}
+        </div>
+        {data.services.length > 8 && (
+          <button
+            className={styles.darkBtn}
+            onClick={() => setShowAll((prev) => !prev)}
+          >
+            <FaChevronDown
+              size={18}
+              style={{
+                transform: showAll ? "rotate(180deg)" : "rotate(0deg)",
+                transition: "transform 0.2s",
+                fill: "white"
+              }}
+            />
+            {showAll ? "Ver Menos" : "Ver Todos"}
+          </button>
+        )}
       </article>
 
       <article id="contato">
