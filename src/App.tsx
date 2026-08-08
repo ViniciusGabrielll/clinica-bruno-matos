@@ -271,17 +271,17 @@ function App() {
         </section>
       </article>
 
-      <footer>
-        <div>
+      <footer className={styles.footer}>
+        <div className={styles.footerContent}>
           <div>
             <p>{data.textAboutUs}</p>
           </div>
           <div>
             <h3>Links <br /> Rápidos —</h3>
-            <a>Início</a>
-            <a>Sobre</a>
-            <a>Tratamentos</a>
-            <a>Contato</a>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#tratamentos">Tratamentos</a>
+            <a href="#contato">Contato</a>
           </div>
           <div>
             <h3>Horário de<br /> Funcionamento —</h3>
@@ -293,7 +293,7 @@ function App() {
             <a href={data.instagramLink} target="_blank" rel="noopener noreferrer">@{data.instagram}</a>
           </div>
         </div>
-        <div>
+        <div className={styles.copywriting}>
           <img src={data.markWhite} alt="Logo" />
           <span>© 2026 {data.name}.<br /> Feito com <FaHeart /></span>
         </div>
