@@ -291,23 +291,48 @@
 }
 
 .serviceCard {
+    position: relative;
     width: 100%;
     background-color: var(--light-primary-color);
+    cursor: pointer;
+}
+
+.serviceCard:hover img {
+    filter: brightness(0.4);
+}
+
+.serviceCard span {
+    position: absolute;
+    color: var(--white-color);
+    font-size: 2rem;
+    top: 1rem;
+    left: 0rem;
+    filter: opacity(0);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.serviceCard:hover span {
+    left: 1rem;
+    filter: opacity(1);
 }
 
 .serviceCard h3 {
-    margin: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-top: 1rem;
     font-family: "Cormorant Garamond", serif;
     font-size: 1.5rem;
 }
 
 .serviceCard p {
-    margin: 1rem;
+    padding: 1rem;
     font-size: 1rem;
 }
 
 .serviceCard img {
     width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 .servicesGradient {

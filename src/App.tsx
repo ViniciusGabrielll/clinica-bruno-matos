@@ -3,8 +3,7 @@ import { useState } from "react";
 
 import styles from "./App.module.css";
 
-import { FaHeart } from "react-icons/fa";
-import { FaChevronDown } from "react-icons/fa";
+import { FaHeart, FaChevronDown } from "react-icons/fa";
 
 import whatsappWhite from "./assets/icons/whatsappWhite.svg";
 import whatsappBlack from "./assets/icons/whatsappBlack.svg";
@@ -123,11 +122,20 @@ function App() {
         <h2>Tratamentos</h2>
         <div className={styles.serviceList}>
           {visibleServices.map((service) => (
-            <div className={styles.serviceCard} key={service.title}>
+            <a
+              href={`${data.whatsAppLink}&text=${encodeURIComponent(
+                `Olá! Gostaria de agendar o tratamento: ${service.title}`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.serviceCard}
+              key={service.title}
+            >
               <img src={service.image} alt={service.title} />
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-            </div>
+              <span>Agendar via WhatsApp</span>
+            </a>
           ))}
           {data.services.length > 8 && !showAll && (
             <div className={styles.servicesGradient} />
