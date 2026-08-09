@@ -113,5 +113,26 @@ export const data = {
             description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
         },
 
+    ],
+
+    feedbacks: [
+        {
+            name: "Elenice Santos",
+            stars: "5",
+            comment: "A limpeza de pele foi incrível! 😃 Estou muito satisfeita!!!SIMPLESMENTE EU AMEIIIII!!😍😍🥰🥰❤️❤️",
+            link: "https://maps.app.goo.gl/1zqyj4TTcPwTVz3o8"
+        },
+        {
+            name: "Conceição Silva",
+            stars: "5",
+            comment: "Ótima localização, atendimento top, maravilhoso,super índico de olhos fechados.",
+            link: "https://maps.app.goo.gl/M2U3sifGG2KZBAhh9"
+        },
+        {
+            name: "Nill Silva",
+            stars: "5",
+            comment: "Experiência ótima: ambiente climatizado, fácil acessibilidade, excelente atendimento, perfeito! Recomendo muiiiiitoooooooo!",
+            link: "https://maps.app.goo.gl/yukmpMxfEY6dyS9J9"
+        }
     ]
 }

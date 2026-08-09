@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import styles from "./App.module.css";
 
-import { FaHeart, FaChevronDown } from "react-icons/fa";
+import { FaHeart, FaChevronDown, FaStar, FaArrowRight } from "react-icons/fa";
 
 import whatsappWhite from "./assets/icons/whatsappWhite.svg";
 import whatsappBlack from "./assets/icons/whatsappBlack.svg";
@@ -177,6 +177,18 @@ function App() {
             {showAll ? "Ver Menos" : "Ver Todos"}
           </button>
         )}
+      </article>
+
+      <article className={styles.feedbacks}>
+        {data.feedbacks.map((feedback) => (
+          <div className={styles.feedbackCard}>
+            <span className={styles.quotationFeedback}>"</span>
+            <h3>{feedback.name}</h3>
+            <span className={styles.feedbackStars}>{feedback.stars} <FaStar/></span>
+            <p>{feedback.comment}</p>
+            <a className={styles.feedbackLink} href={feedback.link}>Ver Feedback <FaArrowRight/></a>
+          </div>
+        ))}
       </article>
 
       <article className={styles.contact} id="contato">
