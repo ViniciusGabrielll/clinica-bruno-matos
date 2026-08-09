@@ -23,6 +23,7 @@
     padding-right: var(--default-padding);
     min-height: 6rem;
     align-items: center;
+    z-index: 999;
 }
 
 .markHeader {
@@ -122,6 +123,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+    z-index: 1;
 }
 
 .hero h2 {
@@ -130,17 +132,20 @@
     font-weight: 400;
 }
 
+
 .model {
     position: absolute;
     height: 100vh;
     width: auto;
     right: 0;
     top: 0;
+    z-index: -1;
 }
 
 .heroBtns {
     display: flex;
     gap: 1rem;
+    z-index: 1;
 }
 
 .darkBtn {
@@ -191,6 +196,7 @@
 .heroLinks {
     display: flex;
     gap: 1rem;
+    z-index: 1;
 }
 
 .heroLinks a {
@@ -514,7 +520,7 @@
     gap: var(--default-padding);
 }
 
-.footer *{
+.footer * {
     color: var(--white-color);
 }
 
@@ -540,4 +546,403 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .markHeader {
+        height: 3.5rem;
+    }
+
+    .nav ul {
+        gap: 0.25rem;
+    }
+
+    .nav ul li {
+        width: 7rem;
+    }
+
+    .model {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center
+    }
+
+    .aboutUs {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .aboutUs img,
+    .aboutUsContent {
+        width: 50%;
+    }
+
+    .aboutUsContent {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .differentials {
+        left: 2rem;
+        right: 2rem;
+        height: 9rem;
+    }
+
+    .differential h4 {
+        font-size: 2.5rem;
+    }
+
+    .services {
+        padding: 4rem 2rem;
+    }
+
+    .serviceList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactSection1 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .contactSection2 {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .contactCard {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .sectionSeparator {
+        height: 2px;
+    }
+
+    .articleLabel {
+        font-size: 0.8rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .header {
+        min-height: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .markHeader {
+        height: 3rem;
+    }
+
+    .whatsAppHeader {
+        width: 3.25rem;
+        height: 3.25rem;
+        padding: 0.8rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 100svh;
+        height: auto;
+        padding: 7rem 1.5rem 4rem;
+        justify-content: flex-end;
+        gap: 2rem;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero h1,
+    .hero h2 {
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .heroBtns {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .darkBtn,
+    .lightBtn {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .heroLinks {
+        position: relative;
+        z-index: 2;
+        gap: 1.5rem;
+    }
+
+
+    .aboutUs {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutUs img {
+        width: 100%;
+        height: 55vh;
+        min-height: 350px;
+        object-fit: cover;
+    }
+
+    .aboutUsContent {
+        width: 100%;
+        padding: 4rem 1.5rem 12rem;
+        gap: 1.5rem;
+    }
+
+    .differentials {
+        position: absolute;
+        left: 1.5rem;
+        right: 1.5rem;
+        bottom: -4rem;
+        height: auto;
+        min-height: 8rem;
+        padding: 1.5rem 0;
+    }
+
+    .differential {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+        text-align: center;
+    }
+
+    .differential h4 {
+        font-size: 1.8rem;
+    }
+
+    .differential p {
+        font-size: 0.75rem;
+    }
+
+    .differentialDivisor {
+        height: 4rem;
+    }
+
+    .services {
+        padding: 8rem 1.5rem;
+    }
+
+    .serviceList {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .serviceCard h3 {
+        font-size: 1.4rem;
+    }
+
+    .serviceCard p {
+        font-size: 0.9rem;
+    }
+
+    .serviceCard:hover img {
+        filter: none;
+    }
+
+    .servicesGradient {
+        height: 5rem;
+    }
+
+    .contactSection1 {
+        height: auto;
+        min-height: auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .form input,
+    .form textarea,
+    .form select {
+        height: 3.5rem;
+        font-size: 0.9rem;
+    }
+
+    .form textarea {
+        min-height: 8rem;
+    }
+
+    .form button {
+        height: 3.5rem;
+    }
+
+    .contactSection2 {
+        height: auto;
+        min-height: auto;
+        padding: 4rem 1.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .iframe {
+        width: 100%;
+        height: 350px;
+        min-height: 350px;
+        flex: none;
+    }
+
+    .contactContent {
+        width: 100%;
+        flex: none;
+    }
+
+    .contactCardContainer {
+        margin-top: 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .contactCard {
+        width: 100%;
+    }
+
+    .contactCardImgContainer {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .contactCardImgContainer img {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .footer {
+        padding: 3rem 1.5rem 2rem;
+        gap: 2rem;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footerContent div {
+        gap: 0.75rem;
+    }
+
+    .footerContent div h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .copywriting {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .markHeader {
+        height: 2.7rem;
+    }
+
+    .whatsAppHeader {
+        width: 3rem;
+        height: 3rem;
+        padding: 0.7rem;
+    }
+
+    .hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .model {
+        right: -7rem;
+        height: 60svh;
+        opacity: 0.55;
+    }
+
+    .aboutUs img {
+        height: 45vh;
+        min-height: 300px;
+    }
+
+    .aboutUsContent {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 11rem;
+    }
+
+    .differentials {
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .differential h4 {
+        font-size: 1.5rem;
+    }
+
+    .differential p {
+        font-size: 0.7rem;
+    }
+
+    .services,
+    .contactSection1,
+    .contactSection2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .iframe {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

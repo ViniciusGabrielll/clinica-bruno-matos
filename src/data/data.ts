@@ -1,6 +1,6 @@
 import markBlack from "../../public/markBlack.svg";
 import markWhite from "../../public/markWhite.svg";
-import aboutUsImg from "../assets/images/aboutUs.png";
+import aboutUsImg from "../assets/images/aboutUs.webp";
 
 import designDeSombrancelhas from "../assets/images/services/designDeSombrancelhas.svg";
 

@@ -8,8 +8,8 @@ import { FaHeart, FaChevronDown } from "react-icons/fa";
 import whatsappWhite from "./assets/icons/whatsappWhite.svg";
 import whatsappBlack from "./assets/icons/whatsappBlack.svg";
 import instagramBlack from "./assets/icons/instagramBlack.svg";
-import modelo1 from "./assets/images/modelo1.png";
-import modelo2 from "./assets/images/modelo2.png";
+import modelo1 from "./assets/images/modelo1.webp";
+import modelo2 from "./assets/images/modelo2.webp";
 
 import whatsappPrimaryColor from "./assets/icons/whatsappPrimaryColor.svg";
 import instagramPrimaryColor from "./assets/icons/instagramPrimaryColor.svg";
