@@ -108,7 +108,7 @@ function App() {
         <div className={styles.aboutUsContent}>
           <div>
             <h3 className={styles.articleLabel}>SOBRE NÓS</h3>
-            <h2>Titulo Sobre nós</h2>
+            <h2>Sua beleza, nosso cuidado</h2>
           </div>
           <p>{data.textAboutUs}</p>
           <div>
@@ -184,9 +184,9 @@ function App() {
           <div className={styles.feedbackCard}>
             <span className={styles.quotationFeedback}>"</span>
             <h3>{feedback.name}</h3>
-            <span className={styles.feedbackStars}>{feedback.stars} <FaStar/></span>
+            <span className={styles.feedbackStars}>{feedback.stars} <FaStar /></span>
             <p>{feedback.comment}</p>
-            <a className={styles.feedbackLink} href={feedback.link}>Ver Feedback <FaArrowRight/></a>
+            <a className={styles.feedbackLink} href={feedback.link}>Ver Feedback <FaArrowRight /></a>
           </div>
         ))}
       </article>

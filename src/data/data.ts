@@ -2,7 +2,22 @@ import markBlack from "../../public/markBlack.svg";
 import markWhite from "../../public/markWhite.svg";
 import aboutUsImg from "../assets/images/aboutUs.webp";
 
-import designDeSombrancelhas from "../assets/images/services/designDeSombrancelhas.svg";
+import designDeSombrancelhas from "../assets/images/services/designDeSombracelhas.webp";
+import botox from "../assets/images/services/botox.webp";
+import depilacaoComCera from "../assets/images/services/depilacaocomcera.webp";
+import dermaplaning from "../assets/images/services/dermaplaning.webp";
+import epilacaoFacial from "../assets/images/services/epilacaofacial.webp";
+import escova from "../assets/images/services/escova.webp";
+import extensaoDeCilios from "../assets/images/services/extensaodecilios.webp";
+import lashlifting from "../assets/images/services/lashlifting.webp";
+import limpezaDePele from "../assets/images/services/limpezadepele.webp";
+import manicure from "../assets/images/services/manicure.webp";
+import massagemRelaxante from "../assets/images/services/massagemrelaxante.webp";
+import microagulhamento from "../assets/images/services/microagulhamento.webp";
+import micropigmentacao from "../assets/images/services/micropigmentacao.webp";
+import peelingQuimico from "../assets/images/services/peelingquimico.webp";
+import tratamentoParaEstrias from "../assets/images/services/tratamentoparaestrias.webp";
+import ventosaterapia from "../assets/images/services/ventosaterapia.webp";
 
 export const data = {
     name: "Gerci Oliveira",
@@ -16,7 +31,7 @@ export const data = {
     businessHours: "Segunda a sábado: 08:00 às 18:00 Domingos: Fechado",
 
     aboutUsImg: aboutUsImg,
-    textAboutUs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    textAboutUs: "Na Clínica de Estética Gerci Oliveira, cada atendimento é pensado para proporcionar cuidado, confiança e uma experiência única. Com mais de 9 anos de experiência e 8 mil + procedimentos realizados, nossa trajetória é marcada pela dedicação aos detalhes e pela satisfação de nossos clientes. Em Moreno, oferecemos um atendimento próximo e personalizado, buscando valorizar a beleza de cada pessoa de forma natural e cuidadosa.",
 
     differential1Title: "+ 8 mil",
     differential1Description: "procedimentos realizados",
@@ -37,81 +52,81 @@ export const data = {
             description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
         },
         {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+            image: limpezaDePele,
+            title: "Limpeza de Pele",
+            description: "Higienização profunda da pele para remover impurezas e promover uma aparência mais saudável."
         },
         {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+            image: dermaplaning,
+            title: "Dermaplaning",
+            description: "Esfoliação superficial que remove células mortas e proporciona uma pele mais lisa e uniforme."
         },
         {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+            image: epilacaoFacial,
+            title: "Epilação Facial",
+            description: "Remoção dos pelos faciais para deixar a pele mais limpa, uniforme e bem cuidada."
         },
         {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+            image: peelingQuimico,
+            title: "Peeling Químico",
+            description: "Renovação da pele para melhorar a textura, uniformidade e aparência de manchas."
         },
         {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+            image: microagulhamento,
+            title: "Microagulhamento",
+            description: "Estímulo da renovação da pele para melhorar sua textura e aparência."
         },
         {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+            image: micropigmentacao,
+            title: "Micropigmentação",
+            description: "Realce e definição das sobrancelhas com um efeito personalizado e natural."
         },
         {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
+            image: extensaoDeCilios,
+            title: "Extensão de Cílios",
+            description: "Alongamento e volume dos cílios para destacar e valorizar o olhar."
+        },
+        {
+            image: lashlifting,
+            title: "Lash Lifting",
+            description: "Curvatura dos cílios naturais para deixar o olhar mais aberto e destacado."
+        },
+        {
+            image: ventosaterapia,
+            title: "Ventosaterapia",
+            description: "Técnica que utiliza ventosas para promover estímulos e proporcionar sensação de relaxamento."
+        },
+        {
+            image: massagemRelaxante,
+            title: "Massagem Relaxante",
+            description: "Massagem corporal para aliviar tensões e proporcionar uma sensação de relaxamento."
+        },
+        {
+            image: tratamentoParaEstrias,
+            title: "Tratamento para Estrias",
+            description: "Procedimento estético voltado para melhorar a aparência e textura da pele com estrias."
+        },
+        {
+            image: depilacaoComCera,
+            title: "Depilação com Cera",
+            description: "Remoção dos pelos pela raiz, proporcionando uma pele mais lisa e uniforme."
+        },
+        {
+            image: manicure,
+            title: "Plástica dos Pés | Manicure",
+            description: "Cuidados estéticos para manter pés e unhas bem tratados, hidratados e cuidados."
+        },
+        {
+            image: botox,
+            title: "Progressiva Orgânica | Botox",
+            description: "Tratamento capilar para reduzir o volume e proporcionar fios mais alinhados e disciplinados."
+        },
+        {
+            image: escova,
+            title: "Escova",
+            description: "Finalização dos cabelos para proporcionar fios mais alinhados, modelados e com movimento."
         },
 
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
-        {
-            image: designDeSombrancelhas,
-            title: "Design de Sombrancelhas",
-            description: "Modelagem das sobrancelhas de acordo com o formato do seu rosto."
-        },
 
     ],
 
