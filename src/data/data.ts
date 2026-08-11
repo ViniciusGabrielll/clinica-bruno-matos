@@ -19,7 +19,7 @@ export const data = {
     businessHours: "Segunda a Sexta: 08:00 às 19:00; Sábado: 08:00 ás 12:00; Domingos: Fechado",
 
     aboutUsImg: aboutUsImg,
-    textAboutUs: "Na Clínica de Estética Bruno Matos, cada atendimento é pensado para proporcionar cuidado, confiança e uma experiência única. Com mais de 8 anos de experiência e 500 + procedimentos realizados, nossa trajetória é marcada pela dedicação aos detalhes e pela satisfação de nossos clientes. Em Moreno, oferecemos um atendimento próximo e personalizado, buscando valorizar a beleza de cada pessoa de forma natural e cuidadosa.",
+    textAboutUs: "Na Clínica de Estética Bruno Matos, cada atendimento é pensado para proporcionar cuidado, confiança e uma experiência única. Com mais de 8 anos de experiência e 500 + procedimentos realizados, nossa trajetória é marcada pela dedicação aos detalhes e pela satisfação de nossos clientes. Em Itabaiana, oferecemos um atendimento próximo e personalizado, buscando valorizar a beleza de cada pessoa de forma natural e cuidadosa.",
 
     differential1Title: "+500",
     differential1Description: "Histórias transformadas",
