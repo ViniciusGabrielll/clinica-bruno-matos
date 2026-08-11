@@ -8,7 +8,7 @@ import { FaHeart, FaChevronDown, FaStar, FaArrowRight } from "react-icons/fa";
 import whatsappWhite from "./assets/icons/whatsappWhite.svg";
 import whatsappBlack from "./assets/icons/whatsappBlack.svg";
 import instagramBlack from "./assets/icons/instagramBlack.svg";
-import modelo1 from "./assets/images/modelo1.webp";
+import markBlack from "../public/markBlack.svg";
 import modelo2 from "./assets/images/modelo2.webp";
 
 import whatsappPrimaryColor from "./assets/icons/whatsappPrimaryColor.svg";
@@ -98,7 +98,7 @@ function App() {
           </a>
         </div>
 
-        <img src={modelo1} alt="Modelo" className={styles.model} />
+        <img src={markBlack} alt="Modelo" className={styles.model} />
       </article>
 
       <div className={styles.sectionSeparator} />

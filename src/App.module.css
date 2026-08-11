@@ -597,6 +597,10 @@
     gap: 2rem;
 }
 
+.copywriting img {
+    width: 5rem;
+}
+
 @media (max-width: 1024px) {
 
     .header {
